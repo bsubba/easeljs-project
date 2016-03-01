@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Interactive Canvas
+        </title>
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src="jquery.min.js"></script>
+        <script src="materialize.min.js"></script>
+        <script src="createjs-2013.12.12.min.js"></script>
+        <script src="app.js" type="application/javascript"></script>
+    </head>
+    <body onload="init();">
+        <div class="container">
+            <ul class="collapsible" data-collapsible="accordion">
+                <li>
+                    <div class="collapsible-header active"><i class="material-icons">web</i>Interactive Canvas</div>
+
+                    <div class="collapsible-body canvas">
+                        <div class="reset"><input type="button" value="Reset" onclick="reset()"></div>
+                        <canvas id="canvas" width=700 height="400" style="background-color: #ecffce"></canvas>
+                    </div>
+                </li>
+                <li>
+                    <div class="collapsible-header"><i class="material-icons">info</i>About</div>
+                    <div class="collapsible-body about">
+                      <h3>Interactive Canvas</h3>
+                        <p>This application is created as a part of coding test. An user can double click within the canvas area with light green background. A point denoted with a small red circle is created upon double click. User can select three arbitrary points within the canvas, which will eventually  create a blue parallelogram and a yellow circle with same area and centroid based on those three selected points. Location information of the all the diagrams created are displayed in terms of (x,y) co-ordinates.  User is free to move around  all the circles created.  The changed location of the diagrams are displayed upon moving around.</p>
+                        <p>This is a simple demonstration of how html5 canvas element can be used to create interactive application to create different types of diagrams. To make the work more easier and  swift, a javascript library, “easeljs” has been used for this project.</p>
+                      <p>Created By: Bikash Subba</p>
+                    </div>
+                </li>
+            </ul>
+        </div>  
+    </body>
+</html>
